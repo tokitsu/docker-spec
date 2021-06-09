@@ -7,6 +7,6 @@ RSpec.describe User, type: :model do
       email: "john@example.com",
       )
      # オブジェクトをexpectに渡す動作が有効であることを確認
-     expect(user).to be_valid
+     expect(user).to be_invalid
   end
 end
