@@ -8,5 +8,7 @@ RSpec.describe User, type: :model do
       )
      # オブジェクトをexpectに渡す動作が有効であることを確認
      expect(user).to be_valid
+
+     expect(user).not_to be_invalid
   end
 end
